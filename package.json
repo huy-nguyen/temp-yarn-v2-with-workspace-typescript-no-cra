@@ -1,0 +1,7 @@
+{
+  "name": "temp-yarn-v2-with-workspace-typescript-no-cra",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
