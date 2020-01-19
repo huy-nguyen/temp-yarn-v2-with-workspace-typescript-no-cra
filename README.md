@@ -4,81 +4,75 @@ To recreate the error:
 
 Error:
 ```
-The CLI moved into a separate package: webpack-cli
-Please install 'webpack-cli' in addition to webpack itself to use the CLI
--> When using npm: npm i -D webpack-cli
--> When using yarn: yarn add -D webpack-cli
-/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.pnp.js:16147
-    throw firstError;
-    ^
+ERROR in /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-serv
+er/client/overlay.js
+Module not found: Error: Can't resolve 'ansi-html' in '/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-
+34b49b6a2b-1.zip/node_modules/webpack-dev-server/client'
+ @ /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/cli
+ent/overlay.js 4:15-35
+ @ /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/cli
+ent?http://localhost:9000
+ @ multi /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-serv
+er/client?http://localhost:9000 ./src/index.ts
 
-Error: A package is trying to access another package without the second one being listed as a dependency of the first one
+ERROR in /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-serv
+er/client/overlay.js
+Module not found: Error: Can't resolve 'html-entities' in '/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.1
+0.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/client'
+ @ /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/cli
+ent/overlay.js 6:15-39
+ @ /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/cli
+ent?http://localhost:9000
+ @ multi /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-serv
+er/client?http://localhost:9000 ./src/index.ts
 
-Required package: webpack-cli (via "webpack-cli/bin/config-yargs")
-Required by: webpack-dev-server@virtual:0468a98b9e4350804dc0f750b9e37e2923fe0d666bac43d5662b7f5bf3ed94032d27d53e06b9d874fd3348340c6986732b2fb3fe6557551857764e895eb96c1f#npm:3.10.1 (via /Users/huy/Sites/temp-yar
-n-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/bin/)
+ERROR in /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-serv
+er/client/utils/log.js
+Module not found: Error: Can't resolve 'loglevel' in '/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-3
+4b49b6a2b-1.zip/node_modules/webpack-dev-server/client/utils'
+ @ /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/cli
+ent/utils/log.js 3:10-29
+ @ /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/cli
+ent?http://localhost:9000
+ERROR in /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-serv
+er/client/clients/SockJSClient.js
+Module not found: Error: Can't resolve 'sockjs-client/dist/sockjs' in '/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-se
+rver-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/client/clients'
+ @ /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/cli
+ent/clients/SockJSClient.js 24:13-49
+ @ /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/cli
+ent/socket.js
+ @ /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/cli
+ent?http://localhost:9000
+ @ multi /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-serv
+er/client?http://localhost:9000 ./src/index.ts
 
-Require stack:
-- /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/bin/
-webpack-dev-server.js
-    at Object.makeError (/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.pnp.js:12425:24)
-    at resolveToUnqualified (/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.pnp.js:16753:35)
-    at resolveRequest (/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.pnp.js:16830:27)
-    at Object.resolveRequest (/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.pnp.js:16898:26)
-    at Function.module_1.Module._resolveFilename (/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.pnp.js:16130:34)
-    at Function.module_1.Module._load (/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.pnp.js:16015:40)
+ERROR in /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-serv
+er/client?http://localhost:9000
+Module not found: Error: Can't resolve 'strip-ansi' in '/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1
+-34b49b6a2b-1.zip/node_modules/webpack-dev-server/client'
+ @ /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/cli
+ent?http://localhost:9000 6:16-37
+ @ multi /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-serv
+er/client?http://localhost:9000 ./src/index.ts
 
-at Object.<anonymous> (/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/bin/webpack-dev-server.js:65:1)
-    at Module._compile (internal/modules/cjs/loader.js:1144:30) {
-  code: 'MODULE_NOT_FOUND',
-  pnpCode: 'UNDECLARED_DEPENDENCY',
-  data: {
-    request: 'webpack-cli/bin/config-yargs',
-    issuer: '/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/bin/',
-    issuerLocator: {
-      name: 'webpack-dev-server',
-      reference: 'virtual:0468a98b9e4350804dc0f750b9e37e2923fe0d666bac43d5662b7f5bf3ed94032d27d53e06b9d874fd3348340c6986732b2fb3fe6557551857764e895eb96c1f#npm:3.10.1'
-    },
-    dependencyName: 'webpack-cli',
-    candidates: [
-      'webpack-dev-server',
-      'ansi-html',
-      'bonjour',
-      'chokidar',
-      'compression',
-      'connect-history-api-fallback',
-      'debug',
-      'del',
-      'express',
-      'html-entities',
-      'http-proxy-middleware',
-      'import-local',
-      'internal-ip',
-      'ip',
-      'is-absolute-url',
-      'killable',
-      'loglevel',
-      'opn',
-      'p-retry',
-      'portfinder',
-      'schema-utils',
-      'selfsigned',
-      'semver',
-      'serve-index',
-      'sockjs',
-      'sockjs-client',
-      'spdy',
-      'strip-ansi',
-      'supports-color',
-      'url',
-      'webpack',
-      'webpack-dev-middleware',
-      'webpack-log',
-      'ws',
-      'yargs'
-    ]
-  },
-  requireStack: [
-    '/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/bin/webpack-dev-server.js'
-  ]
+ERROR in /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-serv
+er/client?http://localhost:9000
+Module not found: Error: Can't resolve 'webpack/hot' in '/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.
+1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/client'
+ @ /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/cli
+ent?http://localhost:9000 76:17-67
+ @ multi /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-serv
+er/client?http://localhost:9000 ./src/index.ts
+
+ERROR in /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-serv
+er/client/utils/reloadApp.js
+Module not found: Error: Can't resolve 'webpack/hot/emitter' in '/Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-n
+pm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/client/utils'
+ @ /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/cli
+ent/utils/reloadApp.js 21:21-51
+ @ /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-server/cli
+ent?http://localhost:9000
+ @ multi /Users/huy/Sites/temp-yarn-v2-with-workspace-typescript-no-cra/.yarn/$$virtual/webpack-dev-server-virtual-99710fb957/0/cache/webpack-dev-server-npm-3.10.1-34b49b6a2b-1.zip/node_modules/webpack-dev-serv
+er/client?http://localhost:9000 ./src/index.ts
 ```
