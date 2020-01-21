@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PnpWebpackPlugin = require("pnp-webpack-plugin");
+const ForkTsCheckerWebpackPlugin = require(`fork-ts-checker-webpack-plugin`);
 
 const outputDirName = "dist";
 
@@ -27,6 +28,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin(),
+    new ForkTsCheckerWebpackPlugin(PnpWebpackPlugin.forkTsCheckerOptions({
+      checkSyntacticErrors: true,
+    })),
   ],
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
