@@ -30,9 +30,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "src/template.ejs",
     }),
-    new ForkTsCheckerWebpackPlugin(PnpWebpackPlugin.forkTsCheckerOptions({
+    new ForkTsCheckerWebpackPlugin({
       checkSyntacticErrors: true,
-    })),
+    }),
   ],
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
