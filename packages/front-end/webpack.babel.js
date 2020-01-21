@@ -6,7 +6,7 @@ const ForkTsCheckerWebpackPlugin = require(`fork-ts-checker-webpack-plugin`);
 const outputDirName = "dist";
 
 module.exports = {
-  entry: "./src/index.ts",
+  entry: "./src/index.tsx",
   output: {
     path: path.resolve(__dirname, outputDirName),
     filename: "[name].[hash].js",
@@ -27,7 +27,9 @@ module.exports = {
     port: 9000
   },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: "src/template.ejs",
+    }),
     new ForkTsCheckerWebpackPlugin(PnpWebpackPlugin.forkTsCheckerOptions({
       checkSyntacticErrors: true,
     })),

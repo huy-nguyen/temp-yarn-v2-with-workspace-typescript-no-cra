@@ -48,6 +48,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-builder-react-jsx@npm:^7.8.3":
+  version: 7.8.3
+  resolution: "@babel/helper-builder-react-jsx@npm:7.8.3"
+  dependencies:
+    "@babel/types": ^7.8.3
+    esutils: ^2.0.0
+  checksum: 7f513586c4a144736201f49272bb69493094294b12373dbf6c1c2b4d3b3e40ccaec9d12fe5ac1ecb29b2e1a9f913452e339471ba0a16ad023939c519db893500
+  languageName: node
+  linkType: hard
+
 "@babel/helper-create-class-features-plugin@npm:^7.8.3":
   version: 7.8.3
   resolution: "@babel/helper-create-class-features-plugin@npm:7.8.3"
@@ -161,6 +171,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-syntax-jsx@npm:^7.8.3":
+  version: 7.8.3
+  resolution: "@babel/plugin-syntax-jsx@npm:7.8.3"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.8.3
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: c7f197188456be3caec32fe77d28b435f16dabde66e7dabcc8ebabc536b3bab82b01a38ce5da715228f31c4dd1c44b336413a0a3b38b064583fb99cd684ecd4a
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-syntax-typescript@npm:^7.8.3":
   version: 7.8.3
   resolution: "@babel/plugin-syntax-typescript@npm:7.8.3"
@@ -169,6 +190,54 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 8ab4ad34f16476d81891be571f45a92f15a1deb7407a5ac759517576878bd9ebcbe62b3e48e7019324e3b3f286d620a41150ea96e24592fb5f83835be6efd055
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-transform-react-display-name@npm:^7.8.3":
+  version: 7.8.3
+  resolution: "@babel/plugin-transform-react-display-name@npm:7.8.3"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.8.3
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 3d50198f011d1549f7b4d629009541b4663fcdc5450c17b391969892435a50a2181c9472f84f036316d20c6c1e7656bbc7dd0b221f33b49a50fbeaebb76b6438
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-transform-react-jsx-self@npm:^7.8.3":
+  version: 7.8.3
+  resolution: "@babel/plugin-transform-react-jsx-self@npm:7.8.3"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.8.3
+    "@babel/plugin-syntax-jsx": ^7.8.3
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: e5658210415f0085682129a642972879c393caab37a11fa0e80321c486c9a3bdb55010fa1fa13c20bc84cb79fa087f915cf1046db0868e2676c02d169102c8ff
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-transform-react-jsx-source@npm:^7.8.3":
+  version: 7.8.3
+  resolution: "@babel/plugin-transform-react-jsx-source@npm:7.8.3"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.8.3
+    "@babel/plugin-syntax-jsx": ^7.8.3
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 741c2f7660cfb0e9d34b96f458d0ac579b6befcd4bffa2488e4204d58fd4a360aed84a48890d9f39fa27253d9687b5915ad38a7c6fbbdd6b8ac65269bf3aa2c7
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-transform-react-jsx@npm:^7.8.3":
+  version: 7.8.3
+  resolution: "@babel/plugin-transform-react-jsx@npm:7.8.3"
+  dependencies:
+    "@babel/helper-builder-react-jsx": ^7.8.3
+    "@babel/helper-plugin-utils": ^7.8.3
+    "@babel/plugin-syntax-jsx": ^7.8.3
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 7cc3f89dbf1a303a550c90afe6b73d60d425a0765ff2ce2433efac9017b78edf977bf5806b49b2641135175bdff52fed73895b5ed3119ff7a9a2cda8d8954cb7
   languageName: node
   linkType: hard
 
@@ -182,6 +251,21 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 8aa8036ddce1f1ffa3547848df8c950cb4cfbcd1b46f649e41ba767538bdbe1fb1f7f12960170e2f7a28ebb32338549fb614b70d8637838ec526d9471c9fb120
+  languageName: node
+  linkType: hard
+
+"@babel/preset-react@npm:7.8.3":
+  version: 7.8.3
+  resolution: "@babel/preset-react@npm:7.8.3"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.8.3
+    "@babel/plugin-transform-react-display-name": ^7.8.3
+    "@babel/plugin-transform-react-jsx": ^7.8.3
+    "@babel/plugin-transform-react-jsx-self": ^7.8.3
+    "@babel/plugin-transform-react-jsx-source": ^7.8.3
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 75ca0949f2b666e570b0cd59a32acb486b63c92463975b748763a6286862f14a26e6bd7113e5d779e95c41cc93eef90b98d9aab1113a7210c267111fab9f0057
   languageName: node
   linkType: hard
 
@@ -265,6 +349,32 @@ __metadata:
   version: 13.1.8
   resolution: "@types/node@npm:13.1.8"
   checksum: 0dbe0a416ce3812115c169a0efd67558a373541e61d1cdb627b3d0a180c8fe892a0480c9fff338ffe0dc915958b3664385f14babea3346624557da5bbd8439f9
+  languageName: node
+  linkType: hard
+
+"@types/prop-types@npm:*":
+  version: 15.7.3
+  resolution: "@types/prop-types@npm:15.7.3"
+  checksum: 0499c1b2e22cce87e9e9b80e82692dc1fe4a6782327674162f42a9940275234569aac0c5f6e2f552694a3dd78bb70de5b2701eda74a3df12eb78b6d6b6aac1c2
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:16.9.5":
+  version: 16.9.5
+  resolution: "@types/react-dom@npm:16.9.5"
+  dependencies:
+    "@types/react": "*"
+  checksum: 5748cb428399d176af2ce7a2423352e2b2e2fb511bb264234d86dd4bb1de24fa609da40f97cdb632a68cc07eb9a99d56cfcb84aff7a160e91ec4d717d92cd266
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:*, @types/react@npm:16.9.18":
+  version: 16.9.18
+  resolution: "@types/react@npm:16.9.18"
+  dependencies:
+    "@types/prop-types": "*"
+    csstype: ^2.2.0
+  checksum: db473a5c6481e87e548fa496150ddee14f5cdc892c4d4189e7308178654a406f911c231364fe6d325d73ddcb2ab2f4b775220cbb90ab621b3d44904483d79be8
   languageName: node
   linkType: hard
 
@@ -1551,6 +1661,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"csstype@npm:^2.2.0":
+  version: 2.6.8
+  resolution: "csstype@npm:2.6.8"
+  checksum: eb432a104d39690548da78a9064138fee2e33773d1b4b069f79e7e8bd8a38c8267a0b1c4e75c808880e9ba4093997222fd46d33d0cb4820dffa123c06809b87a
+  languageName: node
+  linkType: hard
+
 "cyclist@npm:^1.0.1":
   version: 1.0.1
   resolution: "cyclist@npm:1.0.1"
@@ -2056,7 +2173,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esutils@npm:^2.0.2":
+"esutils@npm:^2.0.0, esutils@npm:^2.0.2":
   version: 2.0.3
   resolution: "esutils@npm:2.0.3"
   checksum: 03ee97b57d062884ec31397f1d771ad999b56abd56d1fff56b29f8c61ccabde47adb36e3eaa357318de085252fda2cbc8f82c60fd07b2fd02e2e1c6c3e689052
@@ -2432,11 +2549,16 @@ __metadata:
   resolution: "front-end@workspace:packages/front-end"
   dependencies:
     "@babel/core": 7.8.3
+    "@babel/preset-react": 7.8.3
     "@babel/preset-typescript": 7.8.3
+    "@types/react": 16.9.18
+    "@types/react-dom": 16.9.5
     babel-loader: 8.0.6
     fork-ts-checker-webpack-plugin: 4.0.2
     html-webpack-plugin: 3.2.0
     pnp-webpack-plugin: 1.5.0
+    react: 16.12.0
+    react-dom: 16.12.0
     typescript: 3.7.5
     webpack: 4.41.5
     webpack-cli: 3.3.10
@@ -3404,17 +3526,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"js-tokens@npm:^3.0.0 || ^4.0.0, js-tokens@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "js-tokens@npm:4.0.0"
+  checksum: b6b6b65a47500e55103e5ed962133b9c999dd14f00c49494b109e0379482d030ae0db629b870af4f9023991b21a3055749653fb836736f9c2a76046399e8d84a
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^3.0.2":
   version: 3.0.2
   resolution: "js-tokens@npm:3.0.2"
   checksum: 6f08cb23e62139fafbddee695a11890ecfe3f0db564430fabf5708259507a931b9dd46404c0fda71e3ca92cc4c815c67f32eafe24ca6a6ea96a36b22c7375fee
-  languageName: node
-  linkType: hard
-
-"js-tokens@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "js-tokens@npm:4.0.0"
-  checksum: b6b6b65a47500e55103e5ed962133b9c999dd14f00c49494b109e0379482d030ae0db629b870af4f9023991b21a3055749653fb836736f9c2a76046399e8d84a
   languageName: node
   linkType: hard
 
@@ -3611,6 +3733,17 @@ fsevents@^1.2.7:
   version: 1.6.6
   resolution: "loglevel@npm:1.6.6"
   checksum: 675db3223ac9c270afe02a53fe800346065048273b7ca9f1c069c4d2f8dce33da47b9f6053e96481cff20f7c115d2b5c91a586ee81e4dd7a10b392aceabef2ba
+  languageName: node
+  linkType: hard
+
+"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "loose-envify@npm:1.4.0"
+  dependencies:
+    js-tokens: ^3.0.0 || ^4.0.0
+  bin:
+    loose-envify: cli.js
+  checksum: decbd8d338ba7d1628b11b6c2a6635c799d12236d642c7f1b392683f013bcd7ad0f5a293ef118d3b1a214a8b7fd4e1d1e7d5b04e6eb0afa9f553e1a798dd9616
   languageName: node
   linkType: hard
 
@@ -4681,6 +4814,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"prop-types@npm:^15.6.2":
+  version: 15.7.2
+  resolution: "prop-types@npm:15.7.2"
+  dependencies:
+    loose-envify: ^1.4.0
+    object-assign: ^4.1.1
+    react-is: ^16.8.1
+  checksum: da88f65dc9f16e6bbe1428b5ccdd2c1dbb912a3bb8ef76f3637f2ebd073fa620f66be91a3ce6700ca792e7c17d7b3b0f123ac76e1212ebda7c8329edcdc860d4
+  languageName: node
+  linkType: hard
+
 "proxy-addr@npm:~2.0.5":
   version: 2.0.5
   resolution: "proxy-addr@npm:2.0.5"
@@ -4855,6 +4999,38 @@ fsevents@^1.2.7:
   bin:
     rc: ./cli.js
   checksum: 622cc77b4aac7485132e5b60875e59a9c227396a41714b0d9a141c0439daed9e5e6fc985a8761c513e650660136d2e24321fddd72cb2b7886cb930958374b718
+  languageName: node
+  linkType: hard
+
+"react-dom@npm:16.12.0":
+  version: 16.12.0
+  resolution: "react-dom@npm:16.12.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+    prop-types: ^15.6.2
+    scheduler: ^0.18.0
+  peerDependencies:
+    react: ^16.0.0
+  checksum: 672a599501aa1dc41871b48ef8dcd1c3d3581c73be6ed67ce84b6445230df63cddd2b6209fcc17f513af7fecf926c4d5dd25f4afb8bbdf50113a6cfca474fc18
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^16.8.1":
+  version: 16.12.0
+  resolution: "react-is@npm:16.12.0"
+  checksum: 1cc13815109812213f5f1e15718551c2c4b3c164b447bd35ceba920dc268c5f0710617f12076d9b8100edd4a7e935f76bf19abe745068e387ff2670b3a3fdb0d
+  languageName: node
+  linkType: hard
+
+"react@npm:16.12.0":
+  version: 16.12.0
+  resolution: "react@npm:16.12.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+    prop-types: ^15.6.2
+  checksum: b352f012d0f605d93f0c03f8293d1c7704d7a0559b52ef90f40bec181072a40badc877dd60556b3ae3eb57bbfd91ed9a5ff3ecb154525125fbe7d1394067b321
   languageName: node
   linkType: hard
 
@@ -5141,6 +5317,16 @@ resolve@^1.3.2:
   version: 1.2.4
   resolution: "sax@npm:1.2.4"
   checksum: ca31df9cef3645a5a1d39ba2c946287261ef028bc89c06823685c700117bc60d7f02f01786d9f8566fb8620ce0f2d68263a8ae024104d2077c7489ce4b5fec26
+  languageName: node
+  linkType: hard
+
+"scheduler@npm:^0.18.0":
+  version: 0.18.0
+  resolution: "scheduler@npm:0.18.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+  checksum: e9bc5ac0706b1dae6cca847b1f53e14fc06e567062c758e082d13c8dae9c7eadea03abffab90d12936e60fd79c50e681a11c8f4d72b8171c95ca1cafcb1d265b
   languageName: node
   linkType: hard
 
